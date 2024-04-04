@@ -2,7 +2,7 @@
 name = "defer-rs-impl"
 version = "0.1.0"
 authors = ["Ahmad AlHallak <ahmad.mh.alhallak@gmail.com>"]
-description = "Implementation detail of the `defer-rs` crate"
+description = "proc_macros for the `defer-rs` crate"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 

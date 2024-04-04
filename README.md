@@ -74,7 +74,7 @@ assert_eq!(val.get(), 1)
 
 The `Defer` struct is used to create individual deferred actions. You can create a new deferred action by providing a closure or function that takes no arguments. When the `Defer` instance goes out of scope, the provided closure or function will be executed.
 
-<sub>The `defer!` macro is syntactic sugar for this struct.</sub>
+Note: The `defer!` macro is syntactic sugar for this struct.
 
 Example:
 
@@ -94,7 +94,7 @@ let deferred_action = Defer::new(|| {
 
 The `DeferGroup` struct allows you to group multiple deferred actions together. Actions are executed in reverse order when the `DeferGroup` goes out of scope.
 
-<sub>The `defer_scope!` and `defer_scope_init!` macros are syntactic sugar for this struct and it's `::add()` method.</sub>
+Note: The `defer_scope!` and `defer_scope_init!` macros are syntactic sugar for this struct and it's `::add()` method.
 
 Example:
 
@@ -141,7 +141,7 @@ defer_scope_init!(); // Initiate scoped deferred collection
 
 It's sometimes desireable to have the arguments passed to a deferred function call be evaluated at time of deferment, rather than the deferred time of execution (similar to how the `defer` keyword works in `Go` and other programming languages), this behavior is mimicked when the 'defer!' (or 'defer_scope!') macro is used on a solitary function call.
 
-<sub>This behavior can be disbled by simply postfixing the function call passed to the macro by a `;`.</sub>
+Note: This behavior can be disbled by simply postfixing the function call passed to the macro by a `;`.
 
 Example:
 
