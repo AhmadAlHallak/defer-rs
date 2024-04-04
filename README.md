@@ -120,7 +120,7 @@ defer_group.push(Box::new(|| {
 
 Prefixing the statement(s) in a 'defer!' or 'defer_scope!' macro with the `move` keyword will capture the closure’s environment by value.
 
-<sub>This is the same as adding `move` to the closure passed to `Defer::new()` or `DeferGroup::add()`.</sub>
+Note: This is the same as adding `move` to the closure passed to `Defer::new()` or `DeferGroup::add()`.
 
 Example:
 
