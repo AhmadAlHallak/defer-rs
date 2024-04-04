@@ -1,0 +1,26 @@
+[package]
+name = "defer-rs"
+version = "0.1.0"
+authors = ["Ahmad AlHallak <ahmad.mh.alhallak@gmail.com>"]
+categories = ["rust-patterns"]
+
+description = """
+Deferred execution Rust utilities.
+""" 
+documentation = "https://docs.rs/defer-rs"
+homepage = "https://github.com/AhmadAlHallak/defer-rs"
+repository = "https://github.com/AhmadAlHallak/defer-rs"
+readme = "README.md"  
+exclude = ["/.github/*"]
+edition = "2021"
+keywords = ["deferred-execution", "defer", "deferred", "go", "macro", "scope-guard" ]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+defer-rs-impl = { version = "=0.1.0", path = "impl" }
+
+[workspace]
+members = ["impl"]
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--generate-link-to-definition"]
