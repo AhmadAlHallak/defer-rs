@@ -11,7 +11,7 @@ documentation = "https://docs.rs/defer-rs"
 homepage = "https://github.com/AhmadAlHallak/defer-rs"
 repository = "https://github.com/AhmadAlHallak/defer-rs"
 readme = "README.md"
-exclude = ["/.github/*"]
+exclude = ["/.github/*", "/.gitignore"]
 edition = "2021"
 keywords = [
   "defer",
